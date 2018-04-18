@@ -144,6 +144,13 @@ config BR2_PACKAGE_OPENCV3_LIB_IMGPROC
 	  Include opencv_imgproc (image processing) module into the
 	  OpenCV build.
 
+config BR2_PACKAGE_OPENCV3_LIB_DNN
+	bool "dnn"
+	# opencv_core dependency is already enabled
+	help
+	  Include opencv_imgproc (image processing) module into the
+	  Relajet DL project build.
+
 config BR2_PACKAGE_OPENCV3_LIB_ML
 	bool "ml"
 	# opencv_core dependency is already enabled

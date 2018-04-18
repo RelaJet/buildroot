@@ -80,6 +80,7 @@ OPENCV3_CONF_OPTS += \
 	-DBUILD_opencv_highgui=$(if $(BR2_PACKAGE_OPENCV3_LIB_HIGHGUI),ON,OFF) \
 	-DBUILD_opencv_imgcodecs=$(if $(BR2_PACKAGE_OPENCV3_LIB_IMGCODECS),ON,OFF) \
 	-DBUILD_opencv_imgproc=$(if $(BR2_PACKAGE_OPENCV3_LIB_IMGPROC),ON,OFF) \
+	-DBUILD_opencv_imgproc=$(if $(BR2_PACKAGE_OPENCV3_LIB_DNN),ON,OFF) \
 	-DBUILD_opencv_java=OFF \
 	-DBUILD_opencv_ml=$(if $(BR2_PACKAGE_OPENCV3_LIB_ML),ON,OFF) \
 	-DBUILD_opencv_objdetect=$(if $(BR2_PACKAGE_OPENCV3_LIB_OBJDETECT),ON,OFF) \
