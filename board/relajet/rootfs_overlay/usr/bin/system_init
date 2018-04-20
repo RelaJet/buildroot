@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mount /dev/mmcblk0p1 /mnt
+sync
+
+/mnt/load_module
+sync
+
+cd /mnt
+dnn-cap_demo &
+cd -
