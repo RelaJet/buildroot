@@ -4,5 +4,5 @@
 
 BOARD_DIR="$(dirname $0)"
 
-install -m 0644 -D ${BOARD_DIR}/rootfs_overlay/etc/inittab ${TARGET_DIR}/etc/inittab
-install -m 0644 -D ${BOARD_DIR}/rootfs_overlay/usr/bin/system_init ${TARGET_DIR}/usr/bin/system_init
+install -m 777 -D ${BOARD_DIR}/rootfs_overlay/etc/inittab ${TARGET_DIR}/etc/inittab
+install -m 777 -D ${BOARD_DIR}/rootfs_overlay/usr/bin/system_init ${TARGET_DIR}/usr/bin/system_init
