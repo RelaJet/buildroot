@@ -5,7 +5,3 @@ sync
 
 /mnt/load_module
 sync
-
-cd /mnt
-dnn-cap_demo &
-cd -
