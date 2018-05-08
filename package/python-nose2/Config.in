@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PYTHON_NOSE2
+	bool "python-nose2"
+	select BR2_PACKAGE_PYTHON_ZLIB if BR2_PACKAGE_PYTHON
+	help
+	  nose2 will look in each directory under the starting directory, unless the configuration modifies the included paths.
