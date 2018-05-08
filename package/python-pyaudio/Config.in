@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PYTHON_PYAUDIO
+	bool "python-pyaudio"
+	select BR2_PACKAGE_PYTHON_ZLIB if BR2_PACKAGE_PYTHON
+	help
+	  A classic python audio framework.
