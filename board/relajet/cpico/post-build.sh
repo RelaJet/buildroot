@@ -4,6 +4,9 @@
 
 BOARD_DIR="$(dirname $0)"
 
+# copy the uEnv.txt to the output/images directory
+install -m 0644 -D ${BOARD_DIR}/uEnv.txt $BINARIES_DIR/uEnv.txt
+
 # WiFi BCM43438A0
 install -m 777 -D ${BOARD_DIR}/rootfs_overlay/lib/firmware/brcm/bcm43438a0.hcd ${TARGET_DIR}/lib/firmware/brcm/bcm43438a0.hcd
 install -m 777 -D ${BOARD_DIR}/rootfs_overlay/lib/firmware/brcm/fw_bcm43438a0_p2p.bin ${TARGET_DIR}/lib/firmware/brcm/fw_bcm43438a0_p2p.bin
